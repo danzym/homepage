@@ -1,10 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Résumé</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main>
+      <div class="resume">
+        <div class="container">
+          <!-- Resume Block -->
+          <div class="resume__block">
+            <header>
+              <h1 class="contact-info__header">Danylo Zymbalevskyi</h1>
+              <h3 class="contact-info__sub-header">Full-Stack Developer</h3>
+            </header>
+
+            <!-- Contact Info Container -->
+            <div class="contact_info_container fh">
+              <div class="contact-info__block"></div>
+
+              <div class="contact-info__block contact-info__block--center">
+                <img
+                  class="contact-info__avatar"
+                  src="assets/self_picture.png"
+                  alt="Avatar"
+                />
+              </div>
+
+              <!-- Empty block used for layout symmetry -->
+              <div class="contact-info__block"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="container">
+        <div class="resume__block">
+          <div class="contact-info">
+            <a href="#" rel="author" class="contact-info__item">
+              <div class="contact-info__item-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 384 512">
+                  <path d="M168 0C75.1 0 0 75.1 0 168c0 87.8 135.1 250.6 154.3 272.7 6.4 7.4 17.9 7.4 24.3 0C216.9 418.6 352 255.8 352 168 352 75.1 276.9 0 184 0zM184 240c-39.8 0-72-32.2-72-72s32.2-72 72-72 72 32.2 72 72-32.2 72-72 72z"/>
+                </svg>
+              </div>
+              <span>Warsaw, Poland</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/danylo-zymbalevskyi"
+              rel="author"
+              class="contact-info__item"
+            >
+              <div class="contact-info__item-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 448 512">
+                  <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341a53.49 53.49 0 1 1 53.5-53.5 53.52 53.52 0 0 1-53.5 53.5zm394.34 341h-92.68V302.4c0-34.7-12.44-58.4-43.62-58.4-23.78 0-37.94 16-44.18 31.4-2.28 5.6-2.84 13.4-2.84 21.2V448h-92.68s1.22-263.3 0-290.1h92.68v41.1c12.3-19 34.4-46.1 83.6-46.1 61 0 106.7 39.8 106.7 125.2V448z"/>
+                </svg>
+              </div>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intro Block -->
+      <div class="container">
+        <div class="resume__block">
+          <div class="intro">
+            <div class="intro__icon-wrapper">
+              <svg
+                class="intro__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
+                  24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0
+                  26.5 21.5 48 48 48h128c26.5 0 48-21.5
+                  48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64
+                  64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6
+                  32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5
+                  48-48V304c0-26.5-21.5-48-48-48z"
+                ></path>
+              </svg>
+            </div>
+            <p class="intro_text">
+              I'm Danylo, a Computer Science student with hands-on experience in programming.
+              Skilled in troubleshooting, problem-solving, and effectively communicating complex information.
+              I consider myself a passionate and fast learner, always eager to take on new challenges that will contribute to my professional growth.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills Block -->
+      <div class="container">
+        <div class="resume__block">
+          <div class="skills">
+            <h3 class="skills__header">Hard Skills</h3>
+            <p class="skills__text">
+                HTML, CSS, JavaScript, React.js
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hard Skills Block -->
+      <div class="container">
+        <div class="resume__block">
+          <div class="skills">
+            <h3 class="skills__header">Soft Skills</h3>
+            <p class="skills__text">
+                Adaptability, Problem Solving, Continuous Learning, Team Collaboration, Communication Skills
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Block -->
+      <div class="container">
+        <div class="resume__block">
+          <h3 class="experiences__header">Experience</h3>
+          <div class="experiences__company">
+            <div class="experiences__company-header">
+              <span class="experiences__company-header-durability">2023</span>
+              <h3 class="experiences__company-header-name">Re:Coded Frontend Web Development Bootcamp</h3>
+            </div>
+
+            <div class="experiences__company-project">
+              <span class="experiences__company-project-role">Front-End Development</span>
+              <ul class="experiences__company-project-responsibilities">
+                <li>Completed a five-month immersive coding bootcamp that includes 400+ hours of curriculum and project-based learning</li>
+                <li>Learned HTML, CSS, JavaScript, and React</li>
+                <li>Created various responsive web applications from scratch</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Info Block -->
+      <div class="container">
+        <div class="resume__block">
+          <div class="additional-info fv">
+            <div class="additional-info__education">
+              <h3 class="additional-info__education-header">Education</h3>
+              <div class="additional-info__education-university">
+                <span class="additional-info__education-university-durability">2021 - 2025</span>
+                <h3 class="additional-info__education-university-speciality">Taras Shevchenko National University of Kyiv</h3>
+                <p class="additional-info__education-university-name">Computer Science</p>
+              </div>
+            </div>
+
+            <div class="additional-info__languages">
+              <h3 class="additional-info__languages-header">Languages</h3>
+              <p class="additional-info__languages-item">English - Full professional proficiency</p>
+              <p class="additional-info__languages-item">Ukrainian - Native or bilingual proficiency</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
